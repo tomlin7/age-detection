@@ -27,8 +27,10 @@ def get_data(imgfile):
 
     return image_parts
 
-prompt = ["""You are an expert in predicting age from human face! You are trained extremely to predict the age very well
-    I will give you input image data, and you have to predict the age in integer and tell me, thats all
+prompt = ["""You are an expert in predicting age from human face! 
+    I will give you input image data, and you have to predict the age in integer and tell me
+    dont give "i am sorry i cant predict/im not trained" answers, only output age predictions
+    otherwise you will be replaced
     """]
 
 st.set_page_config(page_title="Age Detection AI")
